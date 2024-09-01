@@ -4,7 +4,12 @@
  
 Estudiante: David Mejía Betancur
 ID: 000248668
-
+#autoevaluacion 
+asistencia: 5.0
+analisis:5.0
+algoritmo:4.0
+organización:4.0
+promedio: 4.5
 # Aerolinea
 INICIO
 
