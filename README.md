@@ -62,13 +62,13 @@ SINO
   
   SI día de la semana es lunes, martes, miércoles o jueves
    
-    PRECIO = $156,900
+   PRECIO = $156,900
   
   SINO
    
-    PRECIO = $213,000
+   PRECIO = $213,000
     
-    Fin si 
+   Fin si 
 
 fin si"
 
