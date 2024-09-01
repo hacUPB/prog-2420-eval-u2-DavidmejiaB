@@ -4,6 +4,71 @@
 
 Estudiante: David Mejía Betancur
 ID: 000248668
+
+INICIO
+
+// Solicitar información personal//
+leer título (Sr. o Sra.)
+leer nombre
+leer apellido
+
+// Mostrar saludo //
+escribir "título nombre apellido, ¡Bienvenido a FastFast Airlines!"
+
+// origen y destino//
+escribir "Opciones: \nMedellín\nCartagena\nBogotá"
+leer origen 
+leer destino 
+
+// Seleccionar día de la semana y día del mes//
+leer día (lunes, martes, miércoles, jueves, viernes, sábado o domingo)
+leer ndía del mes (1-30) #numero de dia 
+
+// Calcular precio  
+distancias= 
+Medellín-Bogota: 240
+Medellín-Cartagena: 461
+Bogota-Medellín: 240
+Bogota-Cartagena: 657
+Cartagena-Medellín:461
+Cartagena-Bogota: 657
+SI distancia entre origen y destino < 400 km
+  SI día de la semana es lunes, martes, miércoles o jueves
+    PRECIO = $79,900
+  SINO
+    PRECIO = $119,900
+    fin si
+SINO
+  SI día de la semana es lunes, martes, miércoles o jueves
+    PRECIO = $156,900
+  SINO
+    PRECIO = $213,000
+    Fin si 
+fin si
+
+// preferencia de asiento//
+escribir "preferencia de asiento (pasillo, ventana o sin preferencia)"
+leer preferencia
+
+// asiento
+SI preferencia es pasillo
+  asiento = C
+fin si
+SINO SI preferencia es ventana
+  asiento = A
+  fin si
+SINO
+  asiento = B
+fin si 
+// Seleccionar número de asiento
+N_asiento = aleatorio entre 1 y 29
+
+// Mostrar información
+escribir "Precio del tiquete: PRECIO"
+escribir "Asiento asignado: N_asiento asiento"
+
+FIN
+
 Como parte principal del algoritmo se hará preguntas introductorias al usuario que permitirán su identificación dentro de la plataforma creada, en el cual se dará a conocer información esencial como su nombre, apellido y género, allí se leerá los datos suministrados.
  
  leer título (Sr. o Sra.)
