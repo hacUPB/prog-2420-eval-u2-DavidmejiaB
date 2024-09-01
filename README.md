@@ -7,7 +7,6 @@ ID: 000248668
 Como parte principal del algoritmo se hará preguntas introductorias al usuario que permitirán su identificación dentro de la plataforma creada, en el cual se dará a conocer información esencial como su nombre, apellido y género, allí se leerá los datos suministrados.
  
  leer título (Sr. o Sra.)
- 
  leer nombre 
 
  leer apellido"
