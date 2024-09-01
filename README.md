@@ -5,7 +5,7 @@
 Estudiante: David Mejía Betancur
 ID: 000248668
 Como parte principal del algoritmo se hará preguntas introductorias al usuario que permitirán su identificación dentro de la plataforma creada, en el cual se dará a conocer información esencial como su nombre, apellido y género, allí se leerá los datos suministrados.
-#"leer título (Sr. o Sra.)
+\n"leer título (Sr. o Sra.)
 leer nombre
 leer apellido"#
 Con esta información suministrada se dará un mensaje de bienvenida al usuario, que incluye su título, nombre y apellido de la siguiente forma:
