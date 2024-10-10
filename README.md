@@ -16,7 +16,7 @@ Organización: 4.0
 
 **Promedio: 4.5**
 
-# Aerolinea
+# Aerolínea
 ## Planteamiento del problema 
 Desarrolla un sistema sencillo de reservas de aerolíneas. Este programa permitirá al usuario ingresar su información personal y elegir un vuelo, en el cual se le solicitará al usuario información esencial, para luego darle un saludo de bienvenida. De allí se pasará a pedir al usuario su destino y la fecha en que desea partir y la fecha de llegada, información desde la cual se determinará un precio para los tiquetes. Además se le pedirá al usuario la preferencia que presenta en caunto al asiento, acorde a esto se designará un asiento. Por último se hará un resumen de la información que se le otorgará al cliente.
 
