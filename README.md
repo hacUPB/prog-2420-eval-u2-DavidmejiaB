@@ -3,15 +3,24 @@
 ## Unidad 2
  
 Estudiante: David Mejía Betancur 
+
 ID: 000248668
 # autoevaluacion
 Asistencia: 5.0
-Analisis:5.0
-Algoritmo:4.0
-Organización:4.0
-promedio: 4.5
+
+Analisis: 5.0
+
+Algoritmo: 4.0
+
+Organización: 4.0
+
+**Promedio: 4.5**
 
 # Aerolinea
+## Planteamiento del problema 
+Desarrolla un sistema sencillo de reservas de aerolíneas. Este programa permitirá al usuario ingresar su información personal y elegir un vuelo, en el cual se le solicitará al usuario información esencial, para luego darle un saludo de bienvenida. De allí se pasará a pedir al usuario su destino y la fecha en que desea partir y la fecha de llegada, información desde la cual se determinará un precio para los tiquetes. Además se le pedirá al usuario la preferencia que presenta en caunto al asiento, acorde a esto se designará un asiento. Por último se hará un resumen de la información que se le otorgará al cliente.
+
+## Pseudocódigo
 ```
 
 INICIO
@@ -155,6 +164,10 @@ Por último, se le informará cual es la silla asignada al usuario y su precio c
 escribir "Asiento asignado: n_asiento asiento"
 ```
 # Satelite 
+## Plantemiento del problema
+Crear un programa que simule la desintegración orbital de un satélite debido a la resistencia atmosférica. A medida que un satélite orbita la Tierra, pierde gradualmente altitud debido a las fuerzas de arrastre, las cuales aumentan a medida que el satélite se acerca a la Tierra.
+## Pseudocódigo
+
 ```
 INICIO
 
@@ -192,16 +205,22 @@ mientras
 
 FIN
 ```
-Lo primero que se pedira son los parametros para estimar el proceso del satelite a lo largo del tiempo, empezando por la distanvia en kilometros del satelite con respecto a la tierra, luego su coeficiente de arrastre el cual indicará la razón de cambio mediante la cual el satelite tenderá a decender y por último la altura de seguridad la cual si el satelite sobrepasa ingresa a la atmosfera terrestre y se desintegrará.
-"leer altitud_inicial (en kilómetros)
+Lo primero que se pedira son los parametros para estimar el proceso del satelite a lo largo del tiempo, empezando por la distancia en kilometros del satelite con respecto a la tierra, luego su coeficiente de arrastre el cual indicará la razón de cambio mediante la cual el satelite tenderá a decender y por último la altura de seguridad la cual si el satelite sobrepasa ingresa a la atmosfera terrestre y se desintegrará.
+```
+leer altitud_inicial (en kilómetros)
 leer coeficiente_arrastre_inicial (un valor decimal pequeño, como 0.01) 
-leer altitud_minima_seguridad (en kilómetros)"
+leer altitud_minima_seguridad (en kilómetros)
+```
 Luego se inicializaran las variables que van a tender a cambiar mediante la estructura en bucle que mas adelante se mostrará. En este paso se determina la información suministrada por el usuario como la información actual del satelite, que será refrescada con el pasar del tiempo.
-"altitud_actual = altitud_inicial
+```
+altitud_actual = altitud_inicial
 coeficiente_arrastre = coeficiente_arrastre_inicial
-orbitas_completadas = 0"
-En el siguiente paso se iniciará un proceso de bucle "mientras" el cual impondrá la condicioón que mientras el satelite no entre en la atmosfera terrestre este efectuará el siguiente proceso: primero se determinará la altitud perdida por el satelite en un primer mometno o primera orbita el cual se encuentra multiplicando el coeficiente de arratre ingresado por el usuario con la altitud actul del satelite, yendo al siguiente paso en el cual se determinara la nueva altitud del satelite, restando la altitud que anteriormente se consideraba como actual con la altitud perdida anteriormente hallada, para luega comenzar el mismo proceso pero con una situación adicional, la cual sera que el coeficiente de arrastre aumentará 0.0001 unidades y por ultimo se sumará una orbita completada al contador que sube progresivamente de uno en uno.
-"mientras 
+orbitas_completadas = 0
+```
+En el siguiente paso se iniciará un proceso de bucle "mientras" el cual impondrá la condicioón que mientras el satelite no entre en la atmosfera terrestre este efectuará el siguiente proceso: primero se determinará la altitud perdida por el satelite en un primer momento o primera orbita el cual se encuentra multiplicando el coeficiente de arratre ingresado por el usuario con la altitud actul del satelite, yendo al siguiente paso en el cual se determinara la nueva altitud del satelite, restando la altitud que anteriormente se consideraba como actual con la altitud perdida anteriormente hallada, para luega comenzar el mismo proceso pero con una situación adicional, la cual sera que el coeficiente de arrastre aumentará 0.0001 unidades y por ultimo se sumará una orbita completada al contador que sube progresivamente de uno en uno.
+```
+
+mientras 
   // Calcular pérdida de altitud debido al arrastre//
   altitud_perdida = coeficiente_arrastre * altitud_acual
 
@@ -212,12 +231,18 @@ En el siguiente paso se iniciará un proceso de bucle "mientras" el cual impondr
   coeficiente_arrastre = coeficiente_arrastre + 0.0001
 
   // Incrementar número de órbitas completadas//
-  orbitas_completadas = orbitas_completadas + 1"
+  orbitas_completadas = orbitas_completadas + 1
+
+```
 En última instancia se utilizará un condicional en el cual se determinará el final de bucle mediante las siguientes condiciones: Si la altitud actual es menor o igual a la altitud minima por seguridad, se dará el mensaje de que el satelite fue desintegrado luego de n órbitas, dando asi el fin del bucle
 o en un segundo caso si la altitud perdida es menor a 0.01, se dirá que el satelite se estabilizó a x altura luego de n órbitas.
-" si altitud_actual <= altitud_minima_seguridad
+
+ ```
+ si altitud_actual <= altitud_minima_seguridad
     escribir "El satélite ha reingresado en la atmósfera terrestre después de " orbitas_completadas " órbitas."
     fin mientras
   sino si altitud_perdida < 0.01
     escribir "El satélite se ha estabilizado en órbita a una altitud de " + ALTITUD_ACTUAL + " km después de " + ORBITAS_COMPLETADAS + " órbitas."
-    fin mientras"
+    fin mientras
+
+```
