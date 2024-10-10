@@ -14,31 +14,29 @@ dia= input("Ingrese el día de la semana que desea viajar: ")
 ndia= int(input("Ingrese el día del mes correspondiente: ")) 
 if dia== "lunes":
     ndia= [5,12,19,26]
-elif ndia != [5,12,19,26]: 
+elif dia== "lunes" and ndia != [5,12,19,26]: 
     print("no es posible las fechas no corresponden")
 elif dia== "martes"or "MARTES":
     ndia= [6,13,20,27]
-elif ndia != [6,13,20,27]: 
+elif dia== "martes" and ndia != [6,13,20,27]: 
     print("no es posible las fechas no corresponden")
 elif dia== "miercoles"or "MIERCOLES":
     ndia= [7,14,21,28]
-elif ndia != [7,14,21,28]: 
+elif dia== "miercoles" and ndia != [7,14,21,28]: 
     print("no es posible las fechas no corresponden")
 elif dia== "jueves"or "JUEVES":
     ndia= [1,8,15,22,29]
-elif ndia != [1,8,15,22,29]: 
+elif dia== "jueves" and ndia != [1,8,15,22,29]: 
     print("no es posible las fechas no corresponden")
 elif dia== "viernes"or "VIERNES":
     ndia= [2,9,16,23,30]
-elif ndia != [2,9,16,23,30]: 
+elif dia== "viernes" and ndia != [2,9,16,23,30]: 
     print("no es posible las fechas no corresponden")
 elif dia== "sabado"or "SABADO":
     ndia= [3,10,17,24,31]
-elif ndia != [3,10,17,24,31]: 
+elif dia== "sabado" and ndia != [3,10,17,24,31]: 
     print("no es posible las fechas no corresponden")
-elif dia== "domingo"or "DOMINGO":
-    ndia= [4,11,18,25]
-elif ndia != [4,11,18,25]: 
+elif dia== "domingo" or "DOMINGO" and ndia != [4,11,18,25]: 
     print("no es posible las fechas no corresponden")
 
 if origen=="medellin" or "Medellin" or "medellín" or "Medellín" and destino=="bogota"or "Bogota" or "Bogotá" or "bogotá":
